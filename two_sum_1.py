@@ -1,12 +1,12 @@
 class Solution:
     def twoSum(self, nums: 'list[int]', target: 'int') -> 'list[int]':
         num_dict = {}
-        for i in range(len(nums)):
-            if target - nums[i] in num_dict:
-                return [num_dict.get(target - nums[i]), i]
+        for i, num in enumerate(nums):
+            if target - num in num_dict:
+                return [num_dict.get(target - num), i]
             else:
-                num_dict[nums[i]] = i
-        # return -1, indicating that the target cannot be achieved by adding two numbers in the list
+                num_dict[num] = i
+
         return -1
 
 
