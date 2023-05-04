@@ -11,10 +11,10 @@ class Solution:
 
 
 s = Solution()
-assert s.isPalindrome(121) == True
-assert s.isPalindrome(-121) == False
-assert s.isPalindrome(10) == False
-assert s.isPalindrome(20) == False
-assert s.isPalindrome(0) == True
+assert s.isPalindrome(121) is True
+assert s.isPalindrome(-121) is False
+assert s.isPalindrome(10) is False
+assert s.isPalindrome(20) is False
+assert s.isPalindrome(0) is True
 
 print('Done')
